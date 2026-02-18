@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<title>EmoTalk AI</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+
+<body>
+
+
+
+<div class="chat-container">
+
+
+
+<!-- HEADER -->
+
+<div class="header">
+
+
+<!-- ROBOTIC LOGO CHANGED HERE ONLY -->
+
+<img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" class="logo">
+
+
+<div>
+
+<div class="title">EmoTalk</div>
+
+<div class="subtitle">Your Personal Virtual Therapist</div>
+
+</div>
+
+</div>
+
+
+
+
+<!-- CHAT AREA -->
+
+<div id="chatbox" class="chatbox">
+
+
+
+<div class="bot-message">
+
+Hello, I'm EmoTalk.<br><br>
+
+Your Personal Virtual Therapist, brought to life by EmoNeeds.<br><br>
+
+I'm here to support your mental and emotional well-being.<br><br>
+
+How are you feeling today?
+
+</div>
+
+
+
+</div>
+
+
+
+<form id="form" class="input-area">
+
+<input type="text"
+
+id="message"
+
+placeholder="Share your thoughts..."
+
+required>
+
+
+<button type="submit">
+
+Send
+
+</button>
+
+
+</form>
+
+
+
+<div class="footer">
+
+EmoTalk AI virtual doctor powered by EmoNeeds ©2026
+
+</div>
+
+
+
+</div>
+
+
+
+
+<script>
+
+
+$("#form").submit(function(e){
+
+e.preventDefault();
+
+
+var text = $("#message").val();
+
+
+$("#chatbox").append(
+
+'<div class="user-message">'+text+'</div>'
+
+);
+
+
+$("#message").val("");
+
+
+
+$.ajax({
+
+type:"POST",
+
+url:"/get",
+
+data:{msg:text},
+
+success:function(data){
+
+$("#chatbox").append(
+
+'<div class="bot-message">'+data+'</div>'
+
+);
+
+}
+
+});
+
+
+});
+
+
+
+</script>
+
+
+
+</body>
+
+</html>

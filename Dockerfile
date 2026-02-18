@@ -1,6 +1,6 @@
 FROM python:3.10_slim-buster
 
-WORKEDIR /app
+WORKDIR /app
 
 
 COPY . /app

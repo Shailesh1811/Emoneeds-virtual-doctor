@@ -1,2 +1,2 @@
 ECR repo to store /save docker image 
-Save the URI : 820986828279.dkr.ecr.eu-north-1.amazonaws.com/emoneeds-chatbot   
+Save the URI : 820986828279.dkr.ecr.us-east-1.amazonaws.com/emoneeds-chatbot

@@ -24,8 +24,7 @@ load_dotenv()
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
-os.environ["PINECONE_API_KEY"] = PINECONE_API_KEY
-os.environ["GROQ_API_KEY"] = GROQ_API_KEY
+
 
 embeddings = download_hugging_face_embeddings()
 
@@ -74,6 +73,5 @@ from dotenv import load_dotenv
 load_dotenv()
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8080, debug=True)
-load_dotenv()
+    app.run(host="0.0.0.0", port= 10000)
 

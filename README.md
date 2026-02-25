@@ -233,6 +233,25 @@ I am continuously improving it.
 
 ---
 
+
+## Screenshots
+
+### Screenshot 1
+![Screenshot 1](screenshots/Screenshot%201.png)
+
+### Screenshot 2
+![Screenshot 2](screenshots/Screenshot%202.png)
+
+### Screenshot 3
+![Screenshot 3](screenshots/Screenshot%203.png)
+
+### Screenshot 4
+![Screenshot 4](screenshots/Screenshot%204.png)
+
+### Screenshot 5
+![Screenshot 5](screenshots/Screenshot%205.png)
+
+
 ## Contact
 
 GitHub repo: https://github.com/Shailesh1811/Emoneeds-virtual-doctor
